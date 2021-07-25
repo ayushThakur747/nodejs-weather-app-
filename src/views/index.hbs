@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weather</title>
+        
+        <link rel="stylesheet" href="./css/style.css" />
+       
+    </head>
+    <body>
+        <div class="main-content">
+            {{>header}}<!-- this is the syntx to apply partials-->
+            <p>use this site to get your weather</p>
+            
+            <form>
+                <input placeholder="New york">
+                <button>search</button>
+            </form>
+            <p id="message-1"></p>
+            <p id="message-2"></p>
+        </div>
+        <footer>{{>footer}}</footer>
+        <script src="/js/app.js"></script><!-- path from root dir-->
+    </body>
+</html> 
