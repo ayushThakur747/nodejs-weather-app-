@@ -1,7 +1,7 @@
 const request = require('request');
 
 const geocode = (address,callback)=>{
-    const url = 'https://api.mapbox.com/geocoding/v5/mapbox.places/' + encodeURIComponent(address)+ '.json?access_token=pk.eyJ1IjoiYXl1c2g3NDciLCJhIjoiY2tyaXA1ZDd5MHZrbTJucGdxbmN1MWpjMSJ9.cHPvocADOfl67TT0oSAINA'; //encodeUIR method is for situation if we want special char in our address
+    const url = 'https://api.mapbox.com/geocoding/v5/mapbox.places/' + encodeURIComponent(address)+ '.json?access_token=pk.eyJ1IjoiYXl1c2g3NDciLCJhIjoiY2tyaXA1ZDd5MHZrbTJucGdxbmN1MWpjMSJ9.cHPvocADOfl67TT0oSAINA'; 
 
     request({url:url},(err,res)=>{
         if(err){
